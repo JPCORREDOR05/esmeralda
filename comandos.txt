@@ -1,0 +1,11 @@
+git checkout main
+
+git pull origin main 
+
+git checkout -b python
+
+git add .
+
+git commit -am "comentario"
+
+git push origin python
