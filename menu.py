@@ -32,3 +32,7 @@ menubar.add_cascade(label="Ayuda", menu=helpmenu)
 
 # Finalmente bucle de la apliación
 root.mainloop()
+
+hola
+
+print("hello")
