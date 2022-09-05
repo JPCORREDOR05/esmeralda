@@ -1,11 +1,11 @@
-git checkout main
+git checkout main                   /entrar a la rama main
 
-git pull origin main 
+git pull origin main                /traer cambios de la rama principal
 
-git checkout -b python
+git checkout -b python              /para crear o posicionarme en esta 
 
-git add .
+git add .                            / añadir archivos
 
-git commit -am "comentario"
+git commit -am "comentario"           /versionar mis cambios
 
-git push origin python
+git push origin python                /subir cambios
