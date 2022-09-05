@@ -5,7 +5,7 @@ git pull origin main                /traer cambios de la rama principal
 git checkout -b python              /para crear o posicionarme en esta 
 
 git add .                            / añadir archivos
-
+i
 git commit -am "comentario"           /versionar mis cambios
 
 git push origin python                /subir cambios
