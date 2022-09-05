@@ -34,3 +34,5 @@ menubar.add_cascade(label="Ayuda", menu=helpmenu)
 root.mainloop()
 
 hola
+
+print("hello")
