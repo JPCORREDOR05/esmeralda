@@ -1,23 +1,23 @@
 import java.util.Arrays;
 public class reto_1 {
     public static void main(String[] args) {
-        int reporte[] = {1,2,3,4,5,10,25};
+        int reultados[] = {1,2,3,4,5,10,25};
 
-        int length = reporte.length;
+        int length = reultados.length;
         for (int i = 0; i < length; i++ ){
         }
         int mayor, minor;
-        mayor = minor = reporte[0];
-        for (int i = 0; i<reporte.length; i++){
-            if(reporte [i] >mayor) {
-                mayor = reporte[i];
+        mayor = minor = reultados[0];
+        for (int i = 0; i<reultados.length; i++){
+            if(reultados [i] >mayor) {
+                mayor = reultados[i];
             }
-            if(reporte [i] <minor) {
-                minor = reporte[i];
+            if(reultados [i] <minor) {
+                minor = reultados[i];
             }
         }
         int j[] = {20};
-        int w[] = {reporte.length,minor,mayor};
+        int w[] = {reultados.length,minor,mayor};
 
         System.out.println(Arrays.toString(w));
     }
