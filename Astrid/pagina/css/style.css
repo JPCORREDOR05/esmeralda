@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+*{box-sizing: border-box;
+margin:0;
+padding:0}
+
+header{display:flex;
+    height: 7rem;
+    justify-content: space-between;
+    padding:3em;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    flex-wrap: wrap;
+}
+
+header .boton_mobile{display:none}
+
+header .navegacion a{text-decoration: none;
+    margin: 10px;
+    font-size: 12px;
+    cursor:pointer}
+
+button{background-color: #8B48BF;
+    color:white;
+    padding:.5rem 1.5rem;
+    border-radius: 50vh;
+    border:none;
+    cursor:pointer}
+
+body{font-family: 'Be Vietnam Pro', sans-serif;}
+
+main .Home {display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:0 5rem}
+
+main .parte_1_Home {width:600px;
+    height: 300px;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: space-between;}
+
+main .parte_1_Home h1{font-size:6vh;
+                    color:#232C50}
+
+main .parte_2_Home{display: flex;
+    justify-content: center;
+    width: 70vh}
+
+main .parte_2_Home .Grafico{width: 70vh;
+        }
+
+main .Sobre_nosotros{display:flex;
+    justify-content: space-around;
+    padding:0 5rem}
+
+main .Sobre_nosotros .parte_1_Sobre_nosotros{width:600px;
+    }
+
+    main .Sobre_nosotros .parte_1_Sobre_nosotros h2{font-size:6vh;
+        color:#232C50}
+
+main .Sobre_nosotros .Parte_2_Sobre_nosotros{width:650px;
+    }
+
+main .Sobre_nosotros .Parte_2_Sobre_nosotros article {display:flex;
+    margin:1rem}
+
+main .Sobre_nosotros .Parte_2_Sobre_nosotros article p {background-color: #8B48BF;
+    width:60px;
+    height: 43px;
+    border-radius: 50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white}
+
+main .Sobre_nosotros .Parte_2_Sobre_nosotros article .parrafos_intermedios{padding:1rem}
+
+main .Sobre_nosotros .Parte_2_Sobre_nosotros article span{color:rgba(179, 178, 183, 1)}
+
+main .h2_testimonios{text-align: center;
+    padding:2rem;
+    font-size: 3rem;
+    }
+
+main .Testimonios{display: flex;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+main .Testimonios article{display:flex;
+    flex-direction:column;
+align-items: center;
+padding:0 2.5rem}
+
+
+main .Testimonios article p{color:rgba(179, 178, 183, 1)}
+
+main .boton{text-align: center;
+    margin:0 0 4rem 0}
+
+footer .recuadro1{background-color: rgba(139, 72, 191, 1);
+    Height:150px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem}
+
+footer .recuadro1 h3{color: white;
+    font-size: 1.5rem;}
+
+footer .recuadro1 button{background-color: white;
+    color:#8B48BF}
+
+footer .recuadro2{background-color: #1E1E26;
+    Height:200px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem}
+
+footer .recuadro2 .cubo1 {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+footer .recuadro2 .cubo1 i{color:white;
+    font-size: 1.5rem;
+    margin: .5rem}
+
+footer .recuadro2 .cubo2{width: 400px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+footer .recuadro2 .nav1{display: flex;
+    flex-direction: column;
+}
+
+footer .recuadro2 .nav1 a{text-decoration: none;
+    color:white;
+    margin:.5rem;
+    }
+
+footer .recuadro2 .nav2{display: flex;
+    flex-direction: column;
+}
+
+footer .recuadro2 .nav2 a{text-decoration: none;
+    color:white;
+    margin:.5rem;
+    }
+
+footer .recuadro2 .cubo3{display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+footer .recuadro2 .cubo3 input{width: 201px;
+    height: 44px;
+    border-radius: 50vh;}
+    
+footer .recuadro2 .cubo3 label{color: white;}
+
+footer p{color: #8C8C94;
+    font-size: 12.5px;
+    background-color: #1E1E26;
+    text-align: right;
+    padding: 1rem 2rem}
+
+/* aqui se va a configurar la seccion de mobile */ 
+
+@media (max-width : 480px) {
+    header {
+        width:100vh;
+        padding:0 2rem;
+        align-items: center;}
+
+    header .navegacion,header .boton {display: none;
+        }
+    header .boton_mobile{display:block;
+        font-size: 2rem;
+        text-align: right;}
+    
+    
+    
+    main .Home {
+        flex-direction: column-reverse;
+        width:100vh;
+        justify-content: space-between;
+        padding: 0;
+        }
+
+        main .parte_2_Home{
+        width: 100vh;
+        height: 400px;
+        padding:0;
+        justify-content: flex-start;
+        }
+
+        main .parte_2_Home .Grafico{
+            width: 100vh;
+        }
+        main .parte_1_Home {
+            width:100vh;
+            height:27rem;
+            justify-content: space-between;
+            align-items: center;
+            }
+
+        main .parte_1_Home h1{text-align: center;
+            width:80vh;
+            font-size: 3rem;
+            margin:3rem 0 0 0}
+
+        main .parte_1_Home p{text-align: center;
+            width:80vh}
+
+    main .Sobre_nosotros{
+        flex-direction: column;
+        padding:0;
+        width: 100vh}
+
+        main .Sobre_nosotros .parte_1_Sobre_nosotros{
+            width:100vh;
+            margin: 20% 0%;
+        }
+
+        main .Sobre_nosotros .parte_1_Sobre_nosotros h2{font-size:3rem;
+            text-align: center;
+            padding:0 1rem}
+
+        main .Sobre_nosotros .parte_1_Sobre_nosotros p{padding:0 2rem;
+            text-align: center;}
+
+        main .Sobre_nosotros .Parte_2_Sobre_nosotros{width:100vh;
+        }
+        
+        main .Sobre_nosotros .Parte_2_Sobre_nosotros article .parrafos_intermedios h3{background-color: rgba(139, 72, 191, 0.3);
+            font-size: 1rem;
+            }
+
+    main .Testimonios{
+        width:100vh;
+        margin:5rem 0 0 0}
+
+    main .h2_testimonios{
+        width: 100vh;
+        text-align: center;
+            padding:2rem 0 0 0;
+            font-size: 2rem;
+            color:#242E53}
+
+    main .Testimonios .testimonios_article1,main .Testimonios .testimonios_article3{display:none}
+
+    main .Testimonios article{
+        width: 100vh;}
+
+    main .Testimonios article p{padding:0 2rem;
+        text-align: center;}
+
+    main .boton{
+        width:100vh;
+        text-align: center;
+        }
+ 
+    footer .recuadro1{
+        width:100vh;
+        flex-direction: column-reverse;
+        padding:0;
+        justify-content: space-around;}
+
+        footer .recuadro1 h3{text-align: center;}
+    
+    footer .recuadro2{
+        flex-direction: column-reverse;
+        Height:400px;
+        width: 100vh;
+        padding:0;
+        ;}
+    
+        footer .recuadro2 .cubo3{padding: 0 0;
+            margin:20px 0 0 0
+            
+        }
+
+        footer .recuadro2 .cubo2{
+            width: 340px;
+            }
+
+        footer .recuadro2 .cubo1 {
+            height: 100px;
+            padding:0;
+            flex-direction: column-reverse;}
+            
+    footer p{text-align: center;
+        width:100vh}
+
+} 
